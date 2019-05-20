@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="consumer" />
+        <module name="demo" />
+        <module name="eurekaservice" />
+        <module name="zuulgateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="clouldhelloword" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="eurekaservice" options="-parameters" />
+      <module name="zuulgateway" options="-parameters" />
+    </option>
+  </component>
+</project>

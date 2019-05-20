@@ -1,0 +1,16 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/goodbase
+    username: root
+    password: 123456
+  application:
+    name: one
+eureka:
+  client:
+    service-url: # EurekaServer地址
+      defaultZone: http://192.168.1.131:10000/eureka
+  instance:
+    prefer-ip-address: true # 当调用getHostname获取实例的,返回ip而不是host名称
+    ip-address: 192.168.1.131 # 指定自己的ip信息，不指定的话会自己寻找
